@@ -18,7 +18,7 @@ merge([H1 | T1] , [H2 | T2], X) ->
      merge( T1 , [H2 | T2], append(X,[H1])). %tail recursion 
  
 append(X , Y) ->
-      X ++ Y. % appending two list ! how cool!
+      X ++ Y. % appending two lists
  
 split(L) ->
     split(L , {[] , []}).
